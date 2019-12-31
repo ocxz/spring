@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+
+	<!-- 实验4：正确的为各种属性赋值 -->
+	<!-- 测试使用null值 、 引用类型赋值（引用其他bean、引用内部bean）（测试） 集合类型赋值（List、Map、Properties）、(测试) 
+		util名称空间创建集合类型的bean 级联属性赋值 -->
+	<bean id="book01" class="com.cxz.bean.Book">
+		<property name="bookName" value="三国演义"></property>
+		<property name="author" value="罗贯中"></property>
+	</bean>
+	<bean id="car01" class="com.cxz.bean.Car">
+		<property name="carName" value="宝马"></property>
+		<property name="price" value="10000"></property>
+		<property name="color" value="绿色"></property>
+	</bean>
+
+	<bean id="person01" class="com.cxz.bean.Person">
+		<property name="lastName">
+			<null />
+		</property>
+		<property name="car" ref="car01"></property>
+	</bean>
+
+	<bean id="person02" class="com.cxz.bean.Person">
+		<property name="car">
+			<!-- 属性值内部，new一个car对象，不放入外面的Beans容器中 -->
+			<bean class="com.cxz.bean.Car">
+				<property name="carName" value="宝马x86"></property>
+				<property name="price" value="1000000"></property>
+				<property name="color" value="银白色"></property>
+			</bean>
+		</property>
+	</bean>
+
+	<!-- 为list类型赋值 -->
+	<bean id="person03" class="com.cxz.bean.Person">
+		<property name="books">
+			<list>
+				<!-- list标签体中添加元素 -->
+				<bean class="com.cxz.bean.Book" p:bookName="西游记" p:author="吴承恩"></bean>
+				<bean class="com.cxz.bean.Book">
+					<property name="bookName" value="水浒传"></property>
+					<property name="author" value="施耐庵"></property>
+				</bean>
+				<!-- 引用容器中的bean -->
+				<ref bean="book01" />
+			</list>
+		</property>
+	</bean>
+
+	<!-- 为Map类型赋值 -->
+	<bean id="person04" class="com.cxz.bean.Person">
+		<property name="maps">
+			<map>
+				<!-- 一个entry标签代表一个key-value -->
+				<entry key="key01" value="张三"></entry>
+				<entry key="key02" value-ref="book01"></entry>
+				<entry key="key03">
+					<bean class="com.cxz.bean.Car" p:carName="奔驰"></bean>
+				</entry>
+				<entry key="key04">
+					<map></map>
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<!-- 为Properties类型赋值 -->
+	<bean id="person05" class="com.cxz.bean.Person">
+		<property name="properties">
+			<props>
+				<prop key="username">root</prop>
+				<prop key="password">111111</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- 级联属性赋值（属性的属性） -->
+	<bean id="person06" class="com.cxz.bean.Person">
+		<!-- 为car赋值时，顺便改一下car的价格 -->
+		<property name="car" ref="car01"></property>
+		<!-- 修改容器中的car的carName属性 -->
+		<property name="car.carName" value="北京现代"></property>
+	</bean>
+
+	<!-- util名称空间声明集合类型，便于外部引用 -->
+	<util:map id="myMap">
+		<entry key="key01" value="张三"></entry>
+		<entry key="key02" value-ref="book01"></entry>
+		<entry key="key03">
+			<bean class="com.cxz.bean.Car" p:carName="奔驰"></bean>
+		</entry>
+		<entry key="key04">
+			<map></map>
+		</entry>
+	</util:map>
+</beans>

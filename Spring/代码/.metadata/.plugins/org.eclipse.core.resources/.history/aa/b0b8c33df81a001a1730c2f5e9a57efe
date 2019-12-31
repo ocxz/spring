@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "person.last-name",
+    "type": "java.lang.String",
+    "description": "A description for 'person.last-name'"
+  },
+  {
+    "name": "person.age",
+    "type": "java.lang.String",
+    "description": "A description for 'person.age'"
+  },
+  {
+    "name": "person.boss",
+    "type": "java.lang.String",
+    "description": "A description for 'person.boss'"
+  }
+]}

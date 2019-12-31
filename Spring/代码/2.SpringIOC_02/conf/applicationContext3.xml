@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+	<!-- XML自动装配 -->
+	<bean id="car" class="com.cxz.bean.Car">
+		<property name="carName" value="宝马"></property>
+		<property name="color" value="绿色"></property>
+	</bean>
+	<!-- books -->
+	<bean class="com.cxz.bean.Book" p:bookName="三国演义"></bean>
+	<bean class="com.cxz.bean.Book" p:bookName="水浒传"></bean>
+	<bean class="com.cxz.bean.Book" p:bookName="西游记"></bean>
+	<bean class="com.cxz.bean.Book" p:bookName="红楼梦"></bean>
+
+	<!-- prop -->
+	<util:properties id="properties">
+		<prop key="name">root</prop>
+		<prop key="age">18</prop>
+	</util:properties>
+
+	<!-- map -->
+	<util:map id="mymaps">
+		<entry key="key01" value="张三"></entry>
+		<entry key="key02" value-ref="properties"></entry>
+		<entry key="key03">
+			<list>
+				<bean class="com.cxz.bean.Book" p:bookName="三国演义"></bean>
+				<bean class="com.cxz.bean.Book" p:bookName="水浒传"></bean>
+				<bean class="com.cxz.bean.Book" p:bookName="西游记"></bean>
+				<bean class="com.cxz.bean.Book" p:bookName="红楼梦"></bean>
+			</list>
+		</entry>
+	</util:map>
+	<!-- 自动装配 byName -->
+	<bean id="person" class="com.cxz.bean.Person" autowire="byName"></bean>
+	<!-- 自动装配 byClass -->
+	<!-- <bean id="person02" class="com.cxz.bean.Person" autowire="byType"></bean> -->
+	<!-- 自动装配 constructor -->
+	<bean id="person03" class="com.cxz.bean.Person"
+		autowire="constructor"></bean>
+</beans>

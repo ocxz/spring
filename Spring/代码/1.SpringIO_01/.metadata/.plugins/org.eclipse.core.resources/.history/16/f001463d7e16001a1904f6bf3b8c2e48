@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="6.SpringMVC_ModelAttribute">
+        <property name="context-root" value="6.SpringMVC_ModelAttribute"/>
+    </wb-module>
+</project-modules>

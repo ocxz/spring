@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="person01" class="com.cxz.bean.Person">
+		<property name="lastName" value="张三"></property>
+		<property name="age" value="18"></property>
+		<property name="email" value="张三@qq.com"></property>
+		<property name="gender" value="男"></property>
+	</bean>
+
+	<!-- 继承person01的配置信息 -->
+	<bean id="person02" parent="person01">
+		<!-- 要变的就改，不变的用继承过来的配置信息即可 -->
+		<property name="lastName" value="李四"></property>
+	</bean>
+
+	<!-- 配置抽象bean -->
+	<bean id="person03" class="com.cxz.bean.Person" abstract="true">
+		<property name="lastName" value="王五"></property>
+		<property name="age" value="18"></property>
+	</bean>
+</beans>

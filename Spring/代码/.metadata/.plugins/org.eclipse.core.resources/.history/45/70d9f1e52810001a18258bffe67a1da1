@@ -1,0 +1,9 @@
+package com.cxz.test;
+import com.cxz.bean.*;
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class IOCTest {
+
+	
+}

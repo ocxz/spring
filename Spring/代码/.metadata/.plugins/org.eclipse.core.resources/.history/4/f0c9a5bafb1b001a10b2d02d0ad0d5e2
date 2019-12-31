@@ -1,0 +1,11 @@
+package com.cxz.springboot.resolver;
+
+/**
+ * 可以在超链接上，获取区域信息
+ * @author 22527
+ *
+ */
+public class MyLocaleResolver {
+
+	
+}

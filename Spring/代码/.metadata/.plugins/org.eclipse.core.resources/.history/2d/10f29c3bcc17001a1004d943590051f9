@@ -1,0 +1,30 @@
+package com.cxz.util;
+
+import java.util.Random;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.cxz.Dao.DepartmentDao;
+import com.cxz.Dao.EmployeeDao;
+
+@Component
+public class Utils {
+
+	@Autowired
+	EmployeeDao employeeDao;
+	@Autowired
+	DepartmentDao departmentDao;
+	
+	public String GetRandomName(String prefix) {
+		switch (prefix) {
+		case "p":
+			String did = "p-" + String.format("%04d",new Random().nextInt(999);
+			break;
+		case "u":
+			break;
+		default:
+			break;
+		}
+	}
+}

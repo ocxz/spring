@@ -1,0 +1,21 @@
+package com.cxz.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class BookStockDao {
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	
+	/**
+	 * 减去某本书的库存
+	 * @param book_id
+	 * @return
+	 */
+	public int updateStokc(String book_id) {
+		
+	}
+}

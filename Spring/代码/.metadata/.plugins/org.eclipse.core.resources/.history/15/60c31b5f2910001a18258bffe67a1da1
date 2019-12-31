@@ -1,0 +1,17 @@
+package com.cxz.test;
+import com.cxz.bean.*;
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class IOCTest {
+	
+	/**
+	 *  测试从容器中拿到Person组件
+	 */
+	@Test
+	public void test() {
+		ApplicationContext ioc = new ClassPathXmlApplicationContext();
+	}
+}

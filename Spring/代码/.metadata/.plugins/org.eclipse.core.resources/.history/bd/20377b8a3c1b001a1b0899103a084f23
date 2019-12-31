@@ -1,0 +1,10 @@
+logging.level.com.cxz=trace
+
+logging.file.name=my.log
+#logging.file.path=/spring/log
+
+# 默认格式：时间 级别 线程id --- 线程 日志记录位置 消息
+# 指定日志控制台输出格式
+logging.pattern.console=%d{yyyy年MM月dd日 HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n
+# 指定日志文件输出格式
+logging.pattern.file=%d{yyyy年MM月dd日 HH:mm:ss} === %thread === %-5level === %logger{50} === %msg%n

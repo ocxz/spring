@@ -1,0 +1,33 @@
+package com.cxz.Dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.cxz.bean.Department;
+
+@Repository
+public class DepartmentDao {
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+
+	public int addDepartment(String did, String dName) {
+		String sql = "INSERT INTO department(did,departmentName) VALUES(?,?)";
+		return jdbcTemplate.update(sql, did, dName);
+	}
+	
+	public int deleteDepartment(String did) {
+		String sql = "DELETE department WHERE did=?";
+		return jdbcTemplate.update(sql, did);
+	}
+	
+	public int updateDepartment(Department department) {
+		String sql = "UPDATE department SET did=?, SET departmentName=? where id=?";
+		return jdbcTemplate.update(sql, department.getDid(), department.getId()());
+	}
+	
+	public Department SelectDepartment(String did) {
+		String sql = "SELECT id,did,departmentName FROM department where did=?";
+	}
+}

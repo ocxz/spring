@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	
+	<!-- 基于XML的配置AOP:
+		1、注册切面类和目标组件到IOC容器中
+		2、进行AOP配置：
+			1）
+	 -->
+	 
+	 <!-- 注册切面类和目标组件到IOC容器中 -->
+	 <bean id="calculator" class="com.cxz.impl.CalculatorImp"></bean>
+	 <bean id="logUtil" class="com.cxz.utils.LogUtil"></bean>
+	 <bean id="validateApsect" class="com.cxz.utils.ValidateApsect"></bean>
+	 
+	 <!-- 进行AOP配置 -->
+	 <aop:config>
+	 	<!-- 配置切点方法 -->
+	 	<aop:pointcut expression="* com.cxz.impl.*.*(..)" id="myPointCut"/>
+	 </aop:config>
+</beans>

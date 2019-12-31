@@ -1,0 +1,14 @@
+package com.cxz.interceptor;
+
+import org.aopalliance.intercept.Interceptor;
+
+/**
+ * 自定义拦截器步骤：
+ * 	1）实现HandlerInterceptor接口
+ * @author 22527
+ *
+ */
+public class FirstInterceptor implements Interceptor {
+
+	
+}

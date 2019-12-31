@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "person.last-name",
+    "type": "java.lang.String",
+    "description": "A description for 'person.last-name'"
+  },
+  {
+    "name": "person.age",
+    "type": "java.lang.String",
+    "description": "A description for 'person.age'"
+  },
+  {
+    "name": "person.boss",
+    "type": "java.lang.String",
+    "description": "A description for 'person.boss'"
+  },
+  {
+    "name": "person.birth",
+    "type": "java.lang.String",
+    "description": "A description for 'person.birth'"
+  },
+  {
+    "name": "person.maps.k1",
+    "type": "java.lang.String",
+    "description": "A description for 'person.maps.k1'"
+  },
+  {
+    "name": "person.lists",
+    "type": "java.lang.String",
+    "description": "A description for 'person.lists'"
+  },
+  {
+    "name": "person.maps.k2",
+    "type": "java.lang.String",
+    "description": "A description for 'person.maps.k2'"
+  }
+]}

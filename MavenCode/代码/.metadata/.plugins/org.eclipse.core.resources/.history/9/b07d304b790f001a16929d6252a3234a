@@ -1,0 +1,10 @@
+package com.cxz.maven;
+import com.cxz.maven.HelloFriend;
+
+public class MakeFriends {
+
+	public String makeFriends(String name) {
+		HelloFriend friend = new HelloFriend();
+		
+	}
+}

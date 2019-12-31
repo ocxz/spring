@@ -1,0 +1,27 @@
+server:
+  port: 8081
+---
+spring:
+  profiles: dev
+server:
+  port: 8083
+  
+---
+server:
+  port: 8084
+
+
+person:
+  last-name: 张三${random.uuid}   
+  age: ${random.int}
+  boss: false
+  birth: 2017/12/12
+  maps: {k1: v1,k2: 12}
+  lists:
+    - 李四
+    - 赵六
+  dog: 
+    name: ${person.last-name}_小狗
+    age: 2
+
+    

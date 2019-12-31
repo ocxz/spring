@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cxz.maven</groupId>
+	<artifactId>WebProject02</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.1</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- 配置当前工程构建过程中的特殊设置 -->
+	<build>
+		<finalName>CxzWeb</finalName>
+		<!-- 配置构建过程中需要使用的插件 -->
+		<!-- cargo是一家专门启动Servlet容器的软件 -->
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<version>1.2.3</version>
+				<configuration>
+					<!-- 配置当前系统中容器位置 -->
+					<container>
+						<containerId>tomcat8x</containerId>
+						<home>D:\IT\apache-tomcat-8.0.49</home>
+						<!-- 默认端口8080可以不配置 -->
+					</container>
+
+					<configuration>
+						<type>existing</type>
+						<home>D:\IT\apache-tomcat-8.0.49</home>
+						<properties>
+							<cargo.servlet.port>8088</cargo.servlet.port>
+						</properties>
+					</configuration>
+				</configuration>
+
+				<!-- 配置插件的执行 -->
+				<executions>
+					<execution>
+						<id>cargo-run</id>
+						<phase>install</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

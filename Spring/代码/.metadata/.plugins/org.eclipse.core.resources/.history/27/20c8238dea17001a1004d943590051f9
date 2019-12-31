@@ -1,0 +1,91 @@
+package com.cxz.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.cxz.Dao.DepartmentDao;
+import com.cxz.Dao.EmployeeDao;
+import com.cxz.bean.Department;
+import com.cxz.bean.Employee;
+import com.cxz.util.Utils;
+
+@Controller
+public class EmpController {
+
+	@Autowired
+	DepartmentDao departmentDao;
+	@Autowired
+	EmployeeDao employeeDao;
+	@Autowired
+	Utils utils;
+
+	@RequestMapping("/show")
+	public String show(Model model) {
+		model.addAttribute("emps", employeeDao.SelectAllEmployee());
+		return "list";
+	}
+
+	@RequestMapping("/addpage")
+	public String toAddPage(Model model) {
+		model.addAttribute("emplyee", new Employee(utils.GetRandomName("u")));
+		model.addAttribute("deps", departmentDao.SelectAllDepartment());
+		return "add2";
+	}
+
+	@RequestMapping(value = "/emp", method = RequestMethod.POST)
+	public String add(Employee employee) {
+		if (employeeDao.addEmployee(employee) == 0) {
+			return "error";
+		}
+		return "redirect:/show";
+	}
+
+	@RequestMapping(value = "/emp/{uid}", method = RequestMethod.GET)
+	public String detail(@PathVariable("uid") String uid, Model model) {
+		Employee employee = employeeDao.SelectEmployee(uid);
+		if (employee == null) {
+			return "error";
+		}
+		model.addAttribute("emp", employee);
+		return "detail";
+	}
+
+	@RequestMapping(value = "/update/{uid}", method = RequestMethod.GET)
+	public String updatePage(@PathVariable("uid") String uid, Model model) {
+		Employee employee = employeeDao.SelectEmployee(uid);
+		List<Department> allDepartment = departmentDao.SelectAllDepartment();
+		if (employee == null || allDepartment == null) {
+			return "error";
+		}
+		model.addAttribute("employee", employee);
+		model.addAttribute("depts", allDepartment);
+		return "edit";
+	}
+
+	@ModelAttribute
+	public void proUpdate(@PathVariable("uid") String uid, Employee employee, Model model) {
+		Employee old = employeeDao.SelectEmployee(uid);
+		if (old == null) {
+			return;
+		}
+		employee.setUid(uid);
+		employee.setLastName(old.getLastName());
+		model.addAttribute("emp", employee);
+		return;
+	}
+
+	@RequestMapping(value = "/emp/{uid}", method = RequestMethod.PUT)
+	public String update(Model model) {
+		if (!model.asMap().containsKey("emp") || employeeDao.updateEmployee((Employee) model.asMap().get("emp")) != 0) {
+			return "error";
+		}
+		return "redirect:/show";
+	}
+}

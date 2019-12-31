@@ -1,0 +1,5 @@
+package com.cxz.interceptor;
+
+public class FirstInterceptor {
+
+}

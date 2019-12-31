@@ -1,0 +1,21 @@
+package com.cxz.util;
+
+import java.util.Locale;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class Utils {
+
+
+	public GetLocale(HttpServletRequest request, String localKey) {
+		String localeStr = request.getParameter("locale");
+		// zh_CN
+		if (localeStr == null || "".equals(localeStr)) {
+			return request.getLocale();	
+		}
+		return new Locale(localeStr.split("_")[0], localeStr.split("_")[1]);
+	}
+}

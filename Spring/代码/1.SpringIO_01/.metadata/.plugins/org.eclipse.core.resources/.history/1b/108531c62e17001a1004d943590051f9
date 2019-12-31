@@ -1,0 +1,28 @@
+package com.cxz.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+/**
+ * 测试自定义视图解析器和视图对象
+ * @author 22527
+ *
+ */
+@Controller
+public class MyViewResovlerController {
+
+	@RequestMapping("/handleplus")
+	public String handleplus(Model model) {
+		
+		List<String> vname = new ArrayList<String>() {};
+		List<String> iname = new ArrayList<String>();
+		model.addAttribute("video", vname);
+		model.addAttribute("imgs", iname);
+		return "meinv:/login";
+	}
+}

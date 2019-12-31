@@ -1,0 +1,17 @@
+package com.cxz.controller;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class OutputController {
+
+	@RequestMapping(value="/handle01")
+	public String handle01(Map<String, Object> map) {
+		map.put("msg", "你好");
+		map.put("content", "中国")；
+		return "success";
+	}
+}

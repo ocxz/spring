@@ -1,0 +1,11 @@
+package com.cxz.utils;
+
+/**
+ *	 用来转变提供Pointcut，切点方法
+ * @author 22527
+ *
+ */
+public class PointCuts {
+
+	
+}

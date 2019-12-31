@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="post" method="post">
+		书名：<input type="text" name="bookName" /><br/>
+		作者：<input type="text" name="author" /><br/>
+		价格：<input type="text" name="price" /><br/>
+		库存：<input type="text" name="stock" /><br/>
+		销量：<input type="text" name="sales" /><br/>
+	</form>
+</body>
+</html>

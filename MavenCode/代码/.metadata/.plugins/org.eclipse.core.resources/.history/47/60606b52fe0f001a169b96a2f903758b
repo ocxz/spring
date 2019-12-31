@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>HelloFriend</artifactId>
+	<!-- SNAPSHOT：表示快照版，即版本不稳定，随时可变化 -->
+	<!-- RELEASE：表示正式版 -->
+
+	<!-- 声明对父工程的引用 -->
+	<parent>
+		<groupId>com.cxz.maven</groupId>
+		<artifactId>Parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+
+		<!-- 以当前文件为基准的父工程pom.xml的相对路径 -->
+		<relativePath>../Parent/pom.xml</relativePath>
+	</parent>
+
+	<name>HelloFriend</name>
+
+	<!-- 依赖junit -->
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- 依赖 com/cxz/maven/Hello/0.0.1-SNAPSHOT/Hello-0.0.1-SNAPSHOT.jar -->
+		<dependency>
+			<groupId>com.cxz.maven</groupId>
+			<artifactId>Hello</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+</project>

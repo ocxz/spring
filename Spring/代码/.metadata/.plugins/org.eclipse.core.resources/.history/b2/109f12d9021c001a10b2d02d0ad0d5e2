@@ -1,0 +1,31 @@
+package com.cxz.springboot.interceptors;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.HandlerInterceptor;
+
+/**
+ * 自定义登陆拦截器
+ * 实现 HandlerInterceptor即可
+ * 重写方法
+ * @author 22527
+ *
+ */
+public class LoginHandlerInterceptor implements HandlerInterceptor{
+	
+	/**
+	 * 目标方法执行之前，判断用户是否登陆
+	 */
+	@Override
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+			throws Exception {
+		Object user = request.getSession().getAttribute("loginUser");
+		if(user==null) {   // 未登陆，返回登陆页面
+			
+		} else {  // 已登陆
+			
+		}
+		return HandlerInterceptor.super.preHandle(request, response, handler);
+	}
+}

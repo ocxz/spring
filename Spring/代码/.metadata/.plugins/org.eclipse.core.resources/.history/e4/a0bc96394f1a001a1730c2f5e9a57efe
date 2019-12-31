@@ -1,0 +1,13 @@
+package com.cxz.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class InterceptorTestController {
+
+	
+	@RequestMapping("test01")
+	public String test01() {
+		System.out.println("test01………………");
+		return "success";
+	}
+}

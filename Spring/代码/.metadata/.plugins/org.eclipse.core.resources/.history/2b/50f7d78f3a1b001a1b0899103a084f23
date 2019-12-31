@@ -1,0 +1,3 @@
+logging.level.com.cxz=trace
+
+logging.file.name=springboot.log

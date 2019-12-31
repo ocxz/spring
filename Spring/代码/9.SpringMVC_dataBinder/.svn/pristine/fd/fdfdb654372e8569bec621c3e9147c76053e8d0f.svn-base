@@ -1,0 +1,8 @@
+NotNull=1
+Null=1
+NotBlank=2
+NotEmpty=3
+Length=10
+Email=11
+Past=30
+typeMismatch=20

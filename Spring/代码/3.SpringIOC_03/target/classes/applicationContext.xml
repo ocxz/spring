@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<!-- 通过注解分别创建DAO、Service、Controller -->
+	<!-- 自动组件扫描 -->
+	<!-- base-package：指定扫描基础路径，将基础路径下所有注解类添加到IOC容器中 -->
+	<context:component-scan base-package="com.cxz" use-default-filters="false">
+		<!-- 指定排除 -->
+		<!-- <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/> -->
+		<!-- <context:exclude-filter type="assignable" expression="com.cxz.Service.BookService"/> -->
+		
+		<!-- 指定只扫描哪些，不指定则默认全扫描 -->
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+</beans>

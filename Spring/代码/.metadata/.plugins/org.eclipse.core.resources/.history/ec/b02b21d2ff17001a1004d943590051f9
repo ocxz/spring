@@ -1,0 +1,10 @@
+package com.cxz.component;
+
+/**
+ * 自定义类型转换器，将String --> 转换为 Employee对象
+ * @author 22527
+ *
+ */
+public class StringToEmployeeConverter {
+
+}

@@ -1,0 +1,10 @@
+package com.cxz.util;
+
+import org.junit.Test;
+
+public class UtilsTest {
+
+	@Test
+	public void testGetRandomName() {
+	}
+}

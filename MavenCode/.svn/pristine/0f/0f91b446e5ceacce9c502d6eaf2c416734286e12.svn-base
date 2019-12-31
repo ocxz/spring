@@ -1,0 +1,23 @@
+#Tue Nov 26 13:24:45 CST 2019
+com.cxz.maven\:WebProject02\:war\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\WebProject02\\target\\classes
+com.cxz.maven\:JavaProject02\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\JavaProject02\\pom.xml
+com.cxz.maven\:JavaProject02\:jar\:tests\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\JavaProject02\\target\\test-classes
+com.cxz.maven\:MakeFriends\:jar\:tests\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\MakeFriends\\target\\test-classes
+com.cxz.maven\:HelloFriend\:jar\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\HelloFriend\\target\\classes
+com.cxz.maven\:Hello\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\Hello\\pom.xml
+com.cxz.maven\:Hello\:jar\:tests\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\Hello\\target\\test-classes
+com.cxz.maven\:MakeFriends\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\MakeFriends\\pom.xml
+com.cxz.maven\:HelloFriend\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\HelloFriend\\pom.xml
+com.cxz.maven\:WebProject01\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\WebProject01\\pom.xml
+com.cxz.maven\:JavaProject01\:jar\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\JavaProject01\\target\\classes
+com.cxz.maven\:HelloFriend\:jar\:tests\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\HelloFriend\\target\\test-classes
+com.cxz.maven\:WebProject02\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\WebProject02\\pom.xml
+com.cxz.maven\:JavaProject02\:jar\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\JavaProject02\\target\\classes
+com.cxz.maven\:WebProject01\:jar\:tests\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\WebProject01\\target\\test-classes
+com.cxz.maven\:Hello\:jar\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\Hello\\target\\classes
+com.cxz.maven\:Parent\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\Parent\\pom.xml
+com.cxz.maven\:WebProject02\:jar\:tests\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\WebProject02\\target\\test-classes
+com.cxz.maven\:JavaProject01\:jar\:tests\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\JavaProject01\\target\\test-classes
+com.cxz.maven\:WebProject01\:war\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\WebProject01\\target\\classes
+com.cxz.maven\:JavaProject01\:pom\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\JavaProject01\\pom.xml
+com.cxz.maven\:MakeFriends\:jar\:\:0.0.1-SNAPSHOT=F\:\\Java\u5B66\u4E60\\Maven-Study\\\u4EE3\u7801\\MakeFriends\\target\\classes

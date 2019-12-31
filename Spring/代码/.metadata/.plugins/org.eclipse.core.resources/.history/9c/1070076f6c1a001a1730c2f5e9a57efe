@@ -1,0 +1,5 @@
+package com.cxz.controller;
+
+public class MyLocaleResolver {
+
+}

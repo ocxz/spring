@@ -1,0 +1,18 @@
+package com.cxz.springboot;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+/**
+ * SpringBoot单元测试
+ * 可以直接使用自动注入的功能
+ * @author 22527
+ *
+ */
+@SpringBootTest
+class ApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+}

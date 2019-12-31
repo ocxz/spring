@@ -1,0 +1,13 @@
+package com.cxz.springboot.interceptors;
+
+import org.springframework.web.servlet.HandlerInterceptor;
+
+/**
+ * 自定义登陆拦截器
+ * 实现 
+ * @author 22527
+ *
+ */
+public class LoginHandlerInterceptor implements HandlerInterceptor{
+
+}

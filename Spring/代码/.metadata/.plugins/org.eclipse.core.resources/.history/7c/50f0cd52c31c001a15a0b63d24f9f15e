@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>成功</h1>
+</body>
+<script type="text/javascript" src="asserts/js/jquery-3.2.1.slim.min.js" ></script>
+<script type="text/javascript">
+	alert("??");
+</script>
+</html>

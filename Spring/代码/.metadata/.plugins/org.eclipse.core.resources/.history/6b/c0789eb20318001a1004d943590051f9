@@ -1,0 +1,67 @@
+package com.cxz.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.cxz.bean.Department;
+
+@Repository
+public class DepartmentDao {
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+
+	public int addDepartment(String did, String dName) {
+		if (did == null || !did.startsWith("d")) {
+			did = utils.GetRandomName("u");
+		}
+		if (SelectDepartment(did) != null) {
+			return 0;
+		}
+		String sql = "INSERT INTO department(did,departmentName) VALUES(?,?)";
+		return jdbcTemplate.update(sql, did, dName);
+	}
+
+	public int addDepartment(Department department) {
+		return addDepartment(department.getDid(), department.getDepartmentName());
+	}
+
+	public int deleteDepartment(String did) {
+		String sql = "DELETE FROM department WHERE did=?";
+		return jdbcTemplate.update(sql, did);
+	}
+
+	public int updateDepartment(Department department) {
+		String sql = "UPDATE department SET did=?,departmentName=? where id=?";
+		return jdbcTemplate.update(sql, department.getDid(), department.getDepartmentName(), department.getId());
+	}
+
+	public Department SelectDepartment(String did) {
+		String sql = "SELECT id,did,departmentName FROM department where did=?";
+		try {
+			return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(Department.class), did);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public List<Department> SelectAllDepartment() {
+		List<Department> departments = new ArrayList<Department>();
+		try {
+			String sql = "SELECT did FROM department";
+			List<String> dids = jdbcTemplate.queryForList(sql, String.class);
+			for (String did : dids) {
+				departments.add(SelectDepartment(did));
+			}
+			return departments;
+		} catch (DataAccessException e) {
+			return null;
+		}
+	}
+}

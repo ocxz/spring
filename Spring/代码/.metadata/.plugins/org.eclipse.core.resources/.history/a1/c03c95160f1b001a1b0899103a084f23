@@ -1,0 +1,5 @@
+package com.cxz.springboot.conf;
+
+public class FirstConfig {
+
+}

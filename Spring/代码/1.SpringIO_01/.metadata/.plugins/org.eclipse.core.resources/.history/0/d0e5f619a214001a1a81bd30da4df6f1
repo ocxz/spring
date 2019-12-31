@@ -1,0 +1,4 @@
+jdbc.user=root
+jdbc.password=111111
+jdbc.jdbcUrl=jdbc:mysql://localhost:3306/tx2?useUnicode=true&characterEncoding=gbk
+jdbc.driverClass=com.mysql.jdbc.Driver

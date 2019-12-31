@@ -1,0 +1,10 @@
+package com.cxz.springboot.interceptors;
+
+/**
+ * 自定义登陆拦截器
+ * @author 22527
+ *
+ */
+public class LoginHandlerInterceptor {
+
+}

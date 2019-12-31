@@ -1,0 +1,33 @@
+package com.cxz.Dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.cxz.bean.Department;
+import com.cxz.bean.Employee;
+
+@Repository
+public class EmployeeDao {
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+
+	public int addEmployee(String uid, String lastName, String email, Integer gender, String did) {
+		String sql = "INSERT INTO employee(uid, lastName,email,gender,did) VALUES(?,?,?,?,?)";
+		return jdbcTemplate.update(sql, uid, lastName, email, gender, did);
+	}
+
+	public int addEmployee(String uid, String lastName, String email, Integer gender, Department department) {
+		return addEmployee(uid, lastName, email, gender, department.getDid());
+	}
+
+	public int addEmployee(Employee employee) {
+		return addEmployee(employee.getUid(), employee.getLastName(), employee.getEmail(), employee.getGender(),
+				employee.getDepartment());
+	}
+
+	public int deleteEmployee() {
+		String sql = ""
+	}
+}

@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>${indexTitle }</title>
+</head>
+<body>
+	<% pageContext.setAttribute("ctp", request.getContextPath()); %>
+	
+	<h2><a href="${ctp }/toLoginPage">去登陆页面</a></h2>
+</body>
+</html>

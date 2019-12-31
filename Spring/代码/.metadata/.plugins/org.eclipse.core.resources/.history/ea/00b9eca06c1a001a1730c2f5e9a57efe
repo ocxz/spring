@@ -1,0 +1,5 @@
+package com.cxz.resolver;
+
+public class MyLocaleResolver {
+
+}

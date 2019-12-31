@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>员工列表</title>
+</head>
+<body>
+	private Integer id; private String uid; private String lastName;
+	private String email; private Integer gender; private Department
+	department;
+
+	<h2>员工列表</h2>
+	<h5>
+		<a href="">添加员工</a>
+	</h5>
+	<table>
+		<tr>
+			<th>员工编号</th>
+			<th>员工姓名</th>
+			<th>员工性别</th>
+			<th>员工邮箱</th>
+			<th>所在部门</th>
+			<th>操作一</th>
+			<th>操作二</th>
+			<th>操作三</th>
+		</tr>
+		<c:forEach items="${emps }" var="emp">
+			<tr>
+				<th>${emp.uid }</th>
+				<th>${emp.lastName }</th>
+				<th>${emp.gender==0?"女":"男" }</th>
+				<th>${emp.email }</th>
+				<th>${emp.department.departmentName }</th>
+				<th><a href="showDetail/${emp.uid }">查看</a></th>
+				<th><a href="update/${emp.uid }">修改</a></th>
+				<th><a href="delete/${emp.uid }">删除</a></th>
+				<th>操作二</th>
+				<th>操作三</th>
+			</tr>
+		</c:forEach>
+	</table>
+</body>
+</html>

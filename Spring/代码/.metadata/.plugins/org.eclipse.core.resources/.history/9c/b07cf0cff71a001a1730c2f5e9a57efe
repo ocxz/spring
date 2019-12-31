@@ -1,0 +1,16 @@
+package com.cxz.springboot.bean;
+
+import java.sql.Date;
+import java.util.List;
+import java.util.Map;
+
+public class Person {
+
+	private String lastName;
+	private Integer age;
+	private Boolean boos;
+	private Date birth;
+	
+	private Map<String, Object> maps;
+	private List<Object> lists;
+}

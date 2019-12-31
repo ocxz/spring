@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加员工2</title>
+</head>
+<% pageContext.setAttribute("ctp", request.getContextPath() %>
+<body>
+	<form:form action="${ctp }/emp" modelAttribute="emplyee">
+		员工编号：<h4>${emplyee.uid }</h4>
+		<input hidden="hidden" name="uid" value="${emplyee.uid }"><br/>
+		员工姓名：<form:input path="lastName"/><br/>
+		员工性别：
+			<form:radiobutton path="gender" value="1" label="男"/>
+			<form:radiobutton path="gender" value="0" label="女"/><br/>
+		员工邮箱：<form:input path="email"/><br/>
+		员工部门：<form:select path="department.did" items="${deps }"
+				itemLabel="departmentName" itemValue="did"></form:select>
+				<br/>
+		<input type="submit" value="添加">
+	</form:form>
+</body>
+</html>

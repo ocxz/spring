@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:6.SpringMVC_ModelAttribute" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:9.SpringMVC_dataBinder" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:93.SpringMVC_i18n" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:3.SpringMVC02_rest" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:4.SpringMVC_request" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:91.SpringMVC_upload" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SpringMVC01_helloworld" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:5.SpringMVC_output" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:8.SpringMVC_CRUD" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:92.SpringMVC_interceptor" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:7.SpringMVC_viewResolver" serverId="Tomcat v8.0 Server at localhost"/>
+</modules>

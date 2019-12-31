@@ -1,0 +1,30 @@
+package com.cxz.resolver;
+
+import java.util.Locale;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.LocaleResolver;
+
+public class MyLocaleResolver implements LocaleResolver {
+
+	/**
+	 * 解析并返回locale
+	 */
+	@Override
+	public Locale resolveLocale(HttpServletRequest request) {
+		String localeStr = request.getParameter("locale");
+		if()
+		return null;
+	}
+
+	/**
+	 * 修改locale
+	 */
+	@Override
+	public void setLocale(HttpServletRequest request, HttpServletResponse response, Locale locale) {
+		throw new UnsupportedOperationException(
+				"Cannot change HTTP accept header - use a different locale resolution strategy");
+	}
+}

@@ -1,0 +1,21 @@
+package com.cxz.util;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.test.context.ContextConfiguration;
+
+@ContextConfiguration(locations="classpath:applicationContext.xml")
+public class FileUtilsTest {
+
+	@Test
+	public void testFileUpload() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetSuffix() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加员工</title>
+</head>
+<body>
+
+		private Integer id;
+	private String uid;
+	private String lastName;
+	private String email;
+	private Integer gender;
+	private Department department;
+	<h2>添加员工</h2>
+	<form action="" method="post">
+		员工编号：<h5></h5>
+		员工姓名：<input type="text" name="lastName">
+		员工性别：<input type="radio" name="gender" value="1">
+		员工姓名：<input type="text" name="lastName">
+		员工姓名：<input type="text" name="lastName">
+		员工姓名：<input type="text" name="lastName">
+		员工姓名：<input type="text" name="lastName">
+		员工姓名：<input type="text" name="lastName">
+	</form>
+</body>
+</html>

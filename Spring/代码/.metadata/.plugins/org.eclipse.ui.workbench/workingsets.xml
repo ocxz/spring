@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574756291353_1" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=1.SpringBoot-helloworld/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringBoot-helloworld/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringIOC_01/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringIOC_01/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringIOC_01/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringMVC01_helloworld/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringMVC01_helloworld/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringMVC01_helloworld/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringBoot-conf/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringBoot-conf/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringBoot-conf/.apt_generated" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringIOC_02/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringIOC_02/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringIOC_02/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringMVC01_helloworld/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringMVC01_helloworld/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringMVC01_helloworld/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringBoot-conf-2/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringBoot-conf-2/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringIOC_03/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringIOC_03/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringIOC_03/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringMVC02_rest/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringMVC02_rest/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringMVC02_rest/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringBoot-autoconfig/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringBoot-autoconfig/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringIOC_04/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringIOC_04/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringIOC_04/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringMVC_request/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringMVC_request/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringMVC_request/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringAOP_01/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringAOP_01/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringBoot-logging/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringBoot-logging/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringMVC_output/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringMVC_output/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringMVC_output/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringAOP_02/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringAOP_02/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringAOP_02/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringBoot-web/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringBoot-web/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringMVC_ModelAttribute/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringMVC_ModelAttribute/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringMVC_ModelAttribute/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringAOP_03_XML/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringAOP_03_XML/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringAOP_03_XML/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringBoot-web-restfulcrud/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringBoot-web-restfulcrud/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringMVC_viewResolver/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringMVC_viewResolver/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringMVC_viewResolver/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringMVC_CRUD/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringMVC_CRUD/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringMVC_CRUD/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringTX_JdbcTemplate01/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringTX_JdbcTemplate01/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringTX_JdbcTemplate01/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringMVC_dataBinder/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringMVC_dataBinder/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringMVC_dataBinder/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringTX_tx01/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringTX_tx01/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringTX_tx01/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringMVC_upload/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringMVC_upload/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringMVC_upload/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringTX_txDetail/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringTX_txDetail/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringTX_txDetail/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringMVC_interceptor/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringMVC_interceptor/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringMVC_interceptor/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringTX_txXML/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringTX_txXML/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringTX_txXML/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=93.SpringMVC_i18n/src\/main\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=93.SpringMVC_i18n/src\/main\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=93.SpringMVC_i18n/conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574756291359_2" label="Java Test Sources" name="Java Test Sources">
+<item elementID="=1.SpringBoot-helloworld/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringIOC_01/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringIOC_01/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringMVC01_helloworld/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringMVC01_helloworld/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringBoot-conf/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringBoot-conf/.apt_generated_tests" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringIOC_02/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringIOC_02/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringMVC01_helloworld/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringMVC01_helloworld/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringBoot-conf-2/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringIOC_03/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringIOC_03/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringMVC02_rest/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringMVC02_rest/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringBoot-autoconfig/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringIOC_04/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringIOC_04/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringMVC_request/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringMVC_request/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringAOP_01/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringAOP_01/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringBoot-logging/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringMVC_output/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringMVC_output/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringAOP_02/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringAOP_02/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringBoot-web/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringMVC_ModelAttribute/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringMVC_ModelAttribute/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringAOP_03_XML/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringAOP_03_XML/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringBoot-web-restfulcrud/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringMVC_viewResolver/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringMVC_viewResolver/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringMVC_CRUD/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringMVC_CRUD/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringTX_JdbcTemplate01/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringTX_JdbcTemplate01/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringMVC_dataBinder/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringMVC_dataBinder/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringTX_tx01/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringTX_tx01/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringMVC_upload/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringMVC_upload/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringTX_txDetail/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringTX_txDetail/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringMVC_interceptor/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringMVC_interceptor/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringTX_txXML/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringTX_txXML/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=93.SpringMVC_i18n/src\/test\/java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=93.SpringMVC_i18n/src\/test\/resources" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1575354683902_3" label="Spring" name="Spring">
+<item elementID="=3.SpringIOC_03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9.SpringTX_tx01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringAOP_03_XML" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringTX_JdbcTemplate01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringTX_txDetail" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringTX_txXML" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringIOC_02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringAOP_02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringIOC_01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringAOP_01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=4.SpringIOC_04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1575356159680_8" label="SpringMVC" name="SpringMVC">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6.SpringMVC_ModelAttribute" type="4"/>
+<item elementID="=3.SpringMVC02_rest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4.SpringMVC_request" type="4"/>
+<item elementID="=9.SpringMVC_dataBinder" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=93.SpringMVC_i18n" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=92.SpringMVC_interceptor" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=8.SpringMVC_CRUD" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringMVC01_helloworld" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5.SpringMVC_output" type="4"/>
+<item elementID="=7.SpringMVC_viewResolver" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=91.SpringMVC_upload" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1575940087479_10" label="SpringBoot" name="SpringBoot">
+<item elementID="=4.SpringBoot-autoconfig" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=3.SpringBoot-conf-2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=5.SpringBoot-logging" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=7.SpringBoot-web-restfulcrud" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=6.SpringBoot-web" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=2.SpringBoot-conf" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1.SpringBoot-helloworld" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1574752309958_0" label="Window Working Set" name="Aggregate for window 1574752309957"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1575436500772_6" label="Window Working Set" name="Aggregate for window 1575436500772"/>
+</workingSetManager>

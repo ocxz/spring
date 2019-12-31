@@ -1,0 +1,5 @@
+package com.cxz.springboot.controller;
+
+public class HelloController {
+
+}

@@ -1,0 +1,20 @@
+package com.cxz.springboot.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class UserController {
+
+	@PostMapping("user/login")
+	public String login(String username, String password, Model modle) {
+		
+		// 登陆成功
+		if(!StringUtils.isEmpty(username) && "123456".equals(password)) {
+			return "dashboard";
+		} else {
+			// 登陆失败
+			return "login";
+		}
+	}
+}

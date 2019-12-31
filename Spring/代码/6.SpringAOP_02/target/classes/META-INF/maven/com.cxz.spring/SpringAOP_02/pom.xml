@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cxz.spring</groupId>
+	<artifactId>SpringAOP_02</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-expression -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/net.sourceforge.cglib/com.springsource.net.sf.cglib -->
+		<dependency>
+			<groupId>net.sourceforge.cglib</groupId>
+			<artifactId>com.springsource.net.sf.cglib</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.aopalliance/com.springsource.org.aopalliance -->
+		<dependency>
+			<groupId>org.aopalliance</groupId>
+			<artifactId>com.springsource.org.aopalliance</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.aspectj/com.springsource.org.aspectj.weaver -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>com.springsource.org.aspectj.weaver</artifactId>
+			<version>1.6.4.RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>

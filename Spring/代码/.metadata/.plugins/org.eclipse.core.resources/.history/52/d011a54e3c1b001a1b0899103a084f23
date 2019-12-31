@@ -1,0 +1,9 @@
+logging.level.com.cxz=trace
+
+#logging.file.name=my.log
+logging.file.path=/spring/log
+
+# 指定日志控制台输出格式
+logging.pattern.console=
+# 指定日志文件输出格式
+logging.pattern.file=

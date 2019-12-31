@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>成功页面</h1>
+	<!-- thmeleaf语法 -->
+	<div th:text="${hello}">默认信息</div>
+	<div th:utext="${hello}">默认信息</div>
+	<hr />
+	
+	<!-- th:each 每次遍历，都会生成当前这边标签  三个h4-->
+	<h4 th:text="${user}" th:each="user:${users}"></h4>	
+	<hr />
+	<h4>
+		<span th:each="user:${users}">[[user]]</span>
+	</h4>
+</body>
+</html>

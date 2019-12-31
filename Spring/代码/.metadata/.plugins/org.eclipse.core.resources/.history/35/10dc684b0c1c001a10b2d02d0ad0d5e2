@@ -1,0 +1,55 @@
+package com.cxz.springboot.conf;
+
+import java.util.Arrays;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.LocaleResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.cxz.springboot.interceptors.LoginHandlerInterceptor;
+import com.cxz.springboot.resolver.MyLocaleResolver;
+
+/**
+ * 实现WebMvcConfigurer接口，扩展SpringMVC的功能 需要扩展什么功能，就重写实现WebMvcConfigurer中的哪个方法
+ * 
+ * @author 22527
+ *
+ */
+// @EnableWebMvc
+@Configuration
+public class WebMvcConf implements WebMvcConfigurer {
+
+	final String[] excludePath = { "/index.html", "/index", "/user/login",
+			"/webjars/**", "/asserts**" };
+
+	/**
+	 * 自定义视图空
+	 */
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/").setViewName("login");
+		registry.addViewController("/index.html").setViewName("login");
+		registry.addViewController("/index").setViewName("login");
+		registry.addViewController("/dashboard").setViewName("dashboard");
+	}
+	
+	// 注册拦截器
+	@Bean
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		System.out.println(Arrays.asList(excludePath));
+		registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
+				.excludePathPatterns(excludePath);
+	}
+	
+
+	@Bean
+	public LocaleResolver localeResolver() {
+		return new MyLocaleResolver();
+	}
+}

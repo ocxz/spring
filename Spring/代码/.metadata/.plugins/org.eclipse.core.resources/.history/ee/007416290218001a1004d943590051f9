@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<!-- 开启包扫描 -->
+	<context:component-scan base-package="com.cxz"></context:component-scan>
+
+	<!-- 配置视图解析器 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+	<!-- 配置MVC视图-控制器 -->
+	<mvc:view-controller path="/hello"
+		view-name="success" />
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<!-- 引用外部文件 -->
+	<context:property-placeholder
+		location="classpath:dbconfig.properties" />
+	<!-- 配置数据源 -->
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="user" value="${jdbc.user}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="jdbcUrl" value="${jdbc.jdbcUrl}"></property>
+		<property name="driverClass" value="${jdbc.driverClass}"></property>
+	</bean>
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<!-- 默认前端控制器拦截所有资源（除了JSP） -->
+	<!-- 而一些静态资源的访问请求，都交给tomcat处理 -->
+	<!-- 告诉SpringMVC 自己映射的请求自己处理，不能处理的请求交给tomcat -->
+	<mvc:default-servlet-handler/>
+	
+	<!-- 配置SpringMVC使用自定义的ConversionService -->
+	<!-- 使用 ConversionServiceFactoryBean工厂来创建ConversionService对象-->
+	<bean class="org.springframework.context.support.ConversionServiceFactoryBean"></bean>
+</beans>

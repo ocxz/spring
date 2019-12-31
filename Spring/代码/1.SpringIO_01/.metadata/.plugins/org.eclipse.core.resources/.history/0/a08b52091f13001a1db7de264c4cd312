@@ -1,0 +1,17 @@
+package com.cxz.utils;
+
+import org.aspectj.lang.annotation.Pointcut;
+
+/**
+ * 用来转变提供Pointcut，切点方法
+ * 
+ * @author 22527
+ *
+ */
+
+public class PointCuts {
+
+	// 扫描impl包中所有方法的切点方法
+	@Pointcut("execution(* com.cxz.impl.*.*(..))")
+	public void ImplAllPointCut() {}
+}

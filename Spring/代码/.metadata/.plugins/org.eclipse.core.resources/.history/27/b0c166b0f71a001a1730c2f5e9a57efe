@@ -1,0 +1,5 @@
+package com.cxz.springboot.bean;
+
+public class Dog {
+
+}

@@ -1,0 +1,18 @@
+package com.cxz.springboot.conf;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.cxz.springboot.service.HelloService;
+
+/**
+ * @Configuration：指名当前类是一个配置类，替代之前的Spring配置文件
+ * @author 22527
+ *
+ */
+@Configuration
+public class FirstConfig {
+
+	public HelloService helloService() {
+		return new HelloService();
+	}
+}

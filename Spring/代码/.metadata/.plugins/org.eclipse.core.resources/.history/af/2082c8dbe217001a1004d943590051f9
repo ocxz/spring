@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>员工信息修改</title>
+</head>
+<body>
+	private Integer id;
+	private String uid;
+	private String lastName;
+	private String email;
+	private Integer gender = 1;
+	private Department department;
+	<h2>员工信息修改</h2>
+	<form:form action="" modelAttribute="employee">
+		员工编号：<h4>${employee.uid }</h4>
+		员工姓名：<h4>${employee.lastName }</h4>
+		员工性别：
+			<form:radiobutton path="gender" value="1" label="男"/>
+			<form:radiobutton path="gender" value="0" label="女"/><br/>
+		员工邮箱：<form:input path="email"/><br/>
+		所在部门：
+			<form:select path="department.did" items="${depts }" 
+			itemLabel="departmentName" itemValue="did"></form:select><br/>
+			
+	</form:form>
+</body>
+</html>

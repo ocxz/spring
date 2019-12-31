@@ -1,0 +1,5 @@
+package com.cxz.dao;
+
+public class BookDao {
+
+}

@@ -1,0 +1,17 @@
+package com.cxz.Dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class DepartmentDao {
+	
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	
+	public int addDepartment(String did, String dName) {
+		String sql = "INSERT INTO department(did,departmentName) VALUES(?,?)";
+		return jdbcTemplate.update(sql, did,dName);
+	}
+}

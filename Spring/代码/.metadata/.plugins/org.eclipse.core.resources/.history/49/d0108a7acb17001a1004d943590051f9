@@ -1,0 +1,13 @@
+package com.cxz.util;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.cxz.Dao.EmployeeDao;
+
+@Component
+public class Utils {
+
+	@Autowired
+	EmployeeDao employeeDao;
+}

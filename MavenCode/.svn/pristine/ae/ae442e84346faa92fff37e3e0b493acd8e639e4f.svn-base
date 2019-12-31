@@ -1,0 +1,8 @@
+package com.cxz.maven;
+
+public class MakeFriends {
+
+	public String makeFriends(String name) {
+		
+	}
+}

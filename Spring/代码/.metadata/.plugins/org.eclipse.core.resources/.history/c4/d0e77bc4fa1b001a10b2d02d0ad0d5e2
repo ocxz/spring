@@ -1,0 +1,6 @@
+package com.cxz.springboot.resolver;
+
+public class MyLocaleResolver {
+
+	
+}

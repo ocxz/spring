@@ -1,0 +1,33 @@
+package com.cxz.util;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@ContextConfiguration(locations="classpath:applicationContext.xml")
+@RunWith(SpringJUnit4ClassRunner.class)
+public class FileUtilsTest {
+
+	@Autowired
+	FileUtils fileUtil;
+	
+	@Test
+	public void testFileUpload() {
+	}
+
+	@Test
+	public void testGetSuffix() {
+		System.out.println(fileUtil.getSuffix(".a.jpg"));;
+	}
+	
+	@Test
+	public void testGetDirPath() {	
+//		assertThat(fileUtil.getDirPath("a/b"), is("a/b/"));
+		assertThat( fileUtil.getDirPath("a/b"), is("a/b/") ); 
+	}
+}

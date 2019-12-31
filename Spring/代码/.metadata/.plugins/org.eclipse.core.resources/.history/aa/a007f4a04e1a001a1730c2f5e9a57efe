@@ -1,0 +1,9 @@
+package com.cxz.controller;
+
+public class InterceptorTestController {
+
+	
+	public String test01() {
+		return "success";
+	}
+}

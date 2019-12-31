@@ -1,0 +1,153 @@
+package com.cxz.test;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.sql.DataSource;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.cxz.bean.Employee;
+
+@ContextConfiguration(locations = "classpath:applicationContext.xml")
+@RunWith(SpringJUnit4ClassRunner.class)
+public class TxTest01 {
+
+	// 获得连接池
+	@Autowired
+	DataSource dataSource;
+
+	// 获取JdbcTemplate对象
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+
+	// 获取NameJdbcTemplate对象
+	@Autowired
+	NamedParameterJdbcTemplate nameJdbcTemplate;
+
+	/**
+	 * 测试获取连接对象
+	 * 
+	 * @throws SQLException
+	 */
+	@Test
+	public void test() throws SQLException {
+		System.out.println(dataSource.getConnection());
+	}
+
+	/**
+	 * 测试更新
+	 * 
+	 * @throws SQLException
+	 */
+	@Test
+	public void testUpdate() throws SQLException {
+		String sql = "Update employee Set salary=? Where emp_id=?";
+		int update = jdbcTemplate.update(sql, 1300.00, 5);
+		System.out.println("更新员工：" + update);
+	}
+
+	/**
+	 * 测试插入
+	 */
+	@Test
+	public void testInsert() {
+		String sql = "Insert into  employee(emp_name, salary) values(?,?)";
+		int update = jdbcTemplate.update(sql, "张三", 1800.00);
+		System.out.println("更新员工：" + update);
+	}
+
+	/**
+	 * 测试批量插入
+	 */
+	@Test
+	public void testBatchUpdate() {
+		String sql = "Insert into employee(emp_name, salary) values(?,?)";
+		// 批量插入的数据
+		// List：sql执行的次数
+		// Object[]数组：每次执行要用的参数
+		List<Object[]> batchArgs = new ArrayList<Object[]>();
+		batchArgs.add(new Object[] { "zhangsan", 1998.89 });
+		batchArgs.add(new Object[] { "lisi", 20698.89 });
+		batchArgs.add(new Object[] { "wangwu", 34582.89 });
+		batchArgs.add(new Object[] { "zhaolu", 96745.89 });
+		// 返回值：每次执行，所影响的行数
+		int[] batchUpdate = jdbcTemplate.batchUpdate(sql, batchArgs);
+		System.out.println(Arrays.asList(batchUpdate));
+	}
+
+	/**
+	 * 测试查询单条记录，封装成一个对象
+	 */
+	@Test
+	public void TestQueryForObject() {
+		String sql = "SELECT emp_id employeedId, emp_name employeedName, " + "salary from employee where emp_id = ?";
+		Employee employee = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(Employee.class), 5);
+		System.out.println(employee);
+	}
+
+	/**
+	 * 测试查询多条记录，封装成一个List<>
+	 */
+	@Test
+	public void TestQueryForList() {
+
+		String sql = "SELECT emp_id employeedId, emp_name employeedName, salary from employee where salary > ?";
+		// 封装List：传入的行映射器也是bean的class
+		List<Employee> query = jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Employee.class), 7000);
+		for (Employee employee : query) {
+			System.out.println(employee);
+		}
+	}
+
+	/**
+	 * 测试使用sql函数（max)
+	 */
+	@Test
+	public void TestSqlMax() {
+
+		String sql = "SELECT Max(salary) from employee";
+		double result = jdbcTemplate.queryForObject(sql, Double.class);
+		System.out.println(result);
+	}
+
+	/**
+	 * 测试使用具名参数的sql，插入一条记录，并以Map形式传入参数 占位符参数：? --> 缺点：传参的时候要求严格按照顺序来
+	 * 具名参数：使用变量名代替?占位符 需要使用 NamedParameterJdbcTemplate nameJdbcTemplate; 语法格式：? -->
+	 * :变量名，如：Insert into employee(emp_name,salary) values(:empName,:salary)
+	 */
+	@Test
+	public void Test2() {
+		String sql = "Insert into employee(emp_name,salary) values(:empName,:salary)";
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("empName", "zhaodashazi");
+		paramMap.put("salary", 8585);
+		int update = nameJdbcTemplate.update(sql, paramMap);
+		System.out.println("更新，影响员工数：" + update);
+	}
+
+	/**
+	 * 使用具名参数，以SqlParamterSource的形式传入参数
+	 */
+	@Test
+	public void Test3() {
+		String sql = "Insert into employee(emp_name,salary) values(:empName,:salary)";
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("empName", "zhaodashazi");
+		paramMap.put("salary", 8585);
+		int update = nameJdbcTemplate.update(sql, paramMap);
+		System.out.println("更新，影响员工数：" + update);
+	}
+}

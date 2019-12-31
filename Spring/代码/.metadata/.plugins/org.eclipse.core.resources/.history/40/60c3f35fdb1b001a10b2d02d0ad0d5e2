@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>成功页面</h1>
+	<!-- thmeleaf语法 -->
+	<div th:text="${hello}">默认信息</div>
+	
+</body>
+</html>

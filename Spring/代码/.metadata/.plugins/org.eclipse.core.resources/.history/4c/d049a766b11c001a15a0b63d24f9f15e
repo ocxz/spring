@@ -1,0 +1,5 @@
+package com.cxz.springboot.exception;
+
+public class UserNotExistException {
+
+}

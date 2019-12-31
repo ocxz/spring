@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.cxz.spring"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="SpringMVC_upload"/>
+			<item value="7.SpringMVC_CRUD"/>
+			<item value="6.SpringMVC_ModelAttribute"/>
+			<item value="SpringTX_txDetail"/>
+			<item value="SpringTX_tx01"/>
+			<item value="SpringTX_JdbcTemplate01"/>
+			<item value="SpringAOP_02"/>
+			<item value="SpringAOP_01"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="F:\Java学习\Spring\代码\3.SpringMVC02_rest"/>
+			<item value="F:\Java学习\Spring\代码\2.SpringMVC01_helloworld"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="F:\Java学习\Spring\代码\7.SpringMVC_viewResolver"/>
+			<item value="F:\Java学习\SpringMVC\代码\8.SpringTX_JdbcTemplate01"/>
+			<item value="F:\Java学习\SpringMVC\代码\SpringAOP_03_XML"/>
+			<item value="F:\Java学习\SpringMVC\代码\4.SpringIOC_04\src\main\java\com\cxz\service\BaseService.java"/>
+			<item value="F:\Java学习\SpringMVC\代码\2.SpringIOC_02\conf\applicationContext4.xml"/>
+			<item value="F:\Java学习\SpringMVC\代码\1.SpringIO_01"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,5 @@
+package com.cxz.springboot.viewresolvers;
+
+public class ViewResolver {
+
+}

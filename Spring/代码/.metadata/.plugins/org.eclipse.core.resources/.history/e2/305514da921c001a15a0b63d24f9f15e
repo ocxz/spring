@@ -1,0 +1,35 @@
+package com.cxz.springboot.controller;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.cxz.springboot.dao.EmployeeDao;
+import com.cxz.springboot.entities.Employee;
+
+@Controller
+public class EmployeeController {
+
+	@Autowired
+	EmployeeDao employeeDao;
+	
+	// 查询所有员工，返回所有列表页面
+	@GetMapping("/emps")
+	public String list(Model model) {
+		Collection<Employee> employees = employeeDao.getAll();
+		model.addAttribute("emps", employees);
+		return "emp/list";
+	}
+	
+	// 来到员工添加页面
+	@GetMapping("/emp")
+	public String toAddPage() {
+		// 来到添加页面
+		// 查出所有的部门，在页面显示
+		
+		return "emp/add";
+	}
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syncparticipants>
+<participant displayName="SVN (/1.SpringBoot-helloworld, /2.SpringBoot-conf, /3.SpringBoot-conf-2, /4.SpringBoot-autoconfig, /5.SpringBoot-logging, /6.SpringMVC_ModelAttribute, /7.SpringMVC_viewResolver, /8.SpringMVC_CRUD, /9.SpringMVC_dataBinder, /91.SpringMVC_upload, /92.SpringMVC_interceptor, /93.SpringMVC_i18n)" id="org.tigris.subversion.subclipse.participant" secondary_id="1575978349286">
+<data root="false">
+<org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS org.eclipse.team.ui.SCOPE_TYPE="ResourceScope">
+<org.eclipse.team.ui.TEAMSUBSRCIBER_REFRESHSCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<resource_scope_roots resource_scope_root_resource="/1.SpringBoot-helloworld"/>
+<resource_scope_roots resource_scope_root_resource="/2.SpringBoot-conf"/>
+<resource_scope_roots resource_scope_root_resource="/3.SpringBoot-conf-2"/>
+<resource_scope_roots resource_scope_root_resource="/4.SpringBoot-autoconfig"/>
+<resource_scope_roots resource_scope_root_resource="/5.SpringBoot-logging"/>
+<resource_scope_roots resource_scope_root_resource="/6.SpringMVC_ModelAttribute"/>
+<resource_scope_roots resource_scope_root_resource="/7.SpringMVC_viewResolver"/>
+<resource_scope_roots resource_scope_root_resource="/8.SpringMVC_CRUD"/>
+<resource_scope_roots resource_scope_root_resource="/9.SpringMVC_dataBinder"/>
+<resource_scope_roots resource_scope_root_resource="/91.SpringMVC_upload"/>
+<resource_scope_roots resource_scope_root_resource="/92.SpringMVC_interceptor"/>
+<resource_scope_roots resource_scope_root_resource="/93.SpringMVC_i18n"/>
+</org.eclipse.team.ui.TEAMSUBSRCIBERSETTINGS>
+</data>
+</participant>
+</syncparticipants>

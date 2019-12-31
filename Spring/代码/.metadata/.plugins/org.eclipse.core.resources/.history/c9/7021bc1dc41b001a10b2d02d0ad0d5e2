@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>首页</title>
+<link rel="icon" href="favicon.ico" type='image/x-ico'>
+</head>
+<body>
+	<h1>这是一个首页</h1>
+	
+	<img alt="" src="favicon.ico">
+</body>
+</html>

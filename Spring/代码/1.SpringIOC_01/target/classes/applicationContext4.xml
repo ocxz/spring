@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean之间的依赖（只是改变创建顺序 -->
+	<bean id="car" class="com.cxz.bean.Car" depends-on="book,person"></bean>
+	<bean id="person" class="com.cxz.bean.Person"></bean>
+	<bean id="book" class="com.cxz.bean.Book"></bean>
+	<!-- 多实例 -->
+	<bean id="book02" class="com.cxz.bean.Book" scope="prototype"></bean>
+	
+	<!-- 工厂模式：由工厂帮我们创建对象 -->
+	<!-- 有一个专门帮我们创建对象的类 -->
+	<!-- AriPlane sp = AriPlaneFactory.getAirPlane(String jzName) -->
+	<!-- 静态工厂，不需要创建工厂本身 -->
+	<bean id="plane01" class="com.cxz.factory.AirPlaneStaticFactory" factory-method="getAirPlane">
+		<constructor-arg value="李四"></constructor-arg>
+	</bean>
+	
+	<!-- 实例工厂的使用 -->
+	<!-- 创建实例工厂 -->
+	<bean id="airPlaneInstanceFactory" class="com.cxz.factory.AirPlaneInstanceFactory"></bean>
+	<bean id="plane02" factory-bean="airPlaneInstanceFactory" 
+	factory-method="getAirPlane">
+		<constructor-arg value="实例工厂"></constructor-arg>
+	</bean>
+	
+	<!-- FactoryBean的注册 -->
+	<bean id="myFactoryBean" class="com.cxz.factory.MyFactoryBeanImp"></bean>
+</beans>

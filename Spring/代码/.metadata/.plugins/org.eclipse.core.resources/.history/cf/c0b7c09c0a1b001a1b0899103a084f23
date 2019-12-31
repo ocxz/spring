@@ -1,0 +1,13 @@
+package com.cxz.springboot.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+	private String name;
+	
+	public String sayHello() {
+		return "你好，" + 
+	}
+}

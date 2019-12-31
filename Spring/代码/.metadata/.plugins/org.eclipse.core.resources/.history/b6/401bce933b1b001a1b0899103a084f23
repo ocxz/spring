@@ -1,0 +1,4 @@
+logging.level.com.cxz=trace
+
+#logging.file.name=my.log
+logging.file.path=/spring/log
