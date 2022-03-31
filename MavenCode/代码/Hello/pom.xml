@@ -6,7 +6,7 @@
 
 	<!-- 配置统一版本号 -->
 	<properties>
-		<cxz.spring.version>4.1.1.RELEASE</cxz.spring.version>
+		<cxz.spring.version>5.3.18</cxz.spring.version>
 	</properties>
 
 	<!-- 声明对父工程的引用 -->
