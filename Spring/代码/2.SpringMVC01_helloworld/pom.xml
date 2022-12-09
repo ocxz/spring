@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<com.cxz.spring.version>4.0.0.RELEASE</com.cxz.spring.version>
+		<com.cxz.spring.version>6.0.0</com.cxz.spring.version>
 	</properties>
 	<dependencies>
 		<dependency>
